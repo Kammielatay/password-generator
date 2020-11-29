@@ -13,18 +13,19 @@ I have created a password generator that composes a customized, yet randomized p
 
 ![password-generator](https://github.com/Kammielatay/password-generator/blob/main/assets/images/password-generator.png)
 
-![](assets/images/random-password.png)
+
 ![random-password](https://github.com/Kammielatay/password-generator/blob/main/assets/images/random-password.png)
 
 However, if you would prefer to not have all of the options included in your password, you have the option to leave it out by simply selecting "cancel" when prompted. If you choose to not specify at least one character, you will receive an error as such:
 
-![](assets/images/error.png)
+
 ![error](https://github.com/Kammielatay/password-generator/blob/main/assets/images/error.png)
 
 Likewise, if you fail to choose a length or choose a length outside the range of 8-128, you will get a message that looks like this: 
 
-![](assets/images/try-again.png)
-![try-again] (https://github.com/Kammielatay/password-generator/blob/main/assets/images/try-again.png)
+![try-again](https://github.com/Kammielatay/password-generator/blob/main/assets/images/try-again.png)
+
+This page was created using [Github Pages](https://kammielatay.github.io/password-generator/)
 
 ### *Recommendation:*
 
