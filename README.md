@@ -10,7 +10,7 @@ If you answered "yes" to either of those questions, then this application is for
 
 I have created a password generator that composes a customized, yet randomized password that generates based off the criteria you have selected. With this application, you have the ability to choose how long you would like your password, as long as it is between 8 and 128 characters. Those characters can contain uppercase, lowercase, numbers, and special characters. Each password is then randomized based off the criteria selected, without the likeihood of getting the same password twice. 
 
-![](assets/images/password-generator.png)
+
 ![password-generator](https://github.com/Kammielatay/password-generator/blob/main/assets/images/password-generator.png)
 
 ![](assets/images/random-password.png)
