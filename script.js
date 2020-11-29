@@ -24,10 +24,14 @@ function generatePassword() {
   let special = confirm("Would you like special characters?");
 
     if (!uppercase && !lowercase && !numbers && !special){
-      alert('Please confirm at least one character type')
-    } 
-     
+      return "Try again! Please confirm at least one character type next time."
+      
+    } else if (input < 8 || input > 128) {
+      return "Try again! Pick a value between 8 - 128 next time."
   
+    }
+
+    
   
   // gathering random item from arrays
   let abcCapArr = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
@@ -36,9 +40,9 @@ function generatePassword() {
   
   let arrNum = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
   
-  let specialArr = ['!', '"', '#', '$', '%', '&', "'", '(', ')', '*', '+', ',', '.', '/', ':', ';', '<', '>', '=', '?', '@', '[', ']', '\\', '^', '_', '`', '{', '|', '}', '~', ' ']
+  let specialArr = ['!', '"', '#', '$', '%', '&', "'", '(', ')', '*', '+', ',', '.', '/', ':', ';', '<', '>', '=', '?', '@', '[', ']', '\\', '^', '_', '`', '{', '|', '}', '~']
   
-
+  // items to include in password based on users choice
     if (uppercase) {
       neededChar = neededChar.concat(abcCapArr[Math.floor(Math.random() * abcCapArr.length)])
       availableChar = availableChar.concat(abcCapArr)
@@ -59,13 +63,18 @@ function generatePassword() {
       neededChar = neededChar.concat(specialArr[Math.floor(Math.random() * specialArr.length)])
       availableChar = availableChar.concat(specialArr)
     }
-
+    // loop through available characters and pick out random elements 
     for (let i = 0; i < input; i++) {
       let randomChar = availableChar[Math.floor(Math.random() * availableChar.length)];
       customPassword.push(randomChar)
   
     }
+  // loop through needed characters to ensure at least one element is included each time
+  for (let j = 0; j < neededChar.length; j++) {
+    customPassword[j + 2] = neededChar[j]
+  }
 
+  // join array into one string
   return customPassword.join('')
 
 }
