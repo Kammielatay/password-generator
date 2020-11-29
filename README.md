@@ -25,7 +25,7 @@ Likewise, if you fail to choose a length or choose a length outside the range of
 
 ![try-again](https://github.com/Kammielatay/password-generator/blob/main/assets/images/try-again.png)
 
-This page was created using [Github Pages](https://kammielatay.github.io/password-generator/)
+This page was created using [Github Pages](https://kammielatay.github.io/password-generator/).
 
 ### *Recommendation:*
 
